@@ -1,0 +1,10 @@
+<?php
+require_once(__DIR__.'/../vendor/autoload.php');
+
+try{
+    $application=new Symfony\Component\Console\Application();
+    $application->add(new Kata\Commands\EVOrganizerCommand());
+    $application->run();
+}catch(\Exception $e){
+    echo "The application could not be executed.".PHP_EOL;
+}

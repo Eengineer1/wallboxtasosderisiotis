@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  rover:
+    build: .
+    container_name: aderisiotis.ev
+    volumes:
+      - .:/ev
